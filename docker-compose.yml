@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  buildenv:
+    image: myos-buildenv:latest
+    build: buildenv
+    tty: true
+    volumes:
+      - ./:/root/env
